@@ -24,6 +24,18 @@
   --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+/* *************** dark theme ********* */
+.dark-theme-varaibles {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: #181a1e;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -523,15 +535,22 @@ main .recent-orders a {
     }
 
     aside {
-        display: none;
+        
         position: fixed;
-        left: 0;
+        display: none;
+        left: -100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
         box-shadow: 1rem 3rem 4rem var(--color-light);
         height: 100vh;
         padding-right: var(--card-padding);
+        animation:showMenu 400ms ease forwards;
+    }
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
     }
     aside .logo {
         margin-left: 1rem;
