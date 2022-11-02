@@ -30,7 +30,7 @@
     --color-white: #202528;
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
-    --color-light: #181a1e;
+    --color-light: rgba(0,0,0,0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);
 
 }
@@ -124,7 +124,6 @@ aside {
   height: 100vh;
 }
 aside .top {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,7 +143,6 @@ aside .close {
 
 /* sidebar */
 aside .sidebar {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   height: 86vh;
